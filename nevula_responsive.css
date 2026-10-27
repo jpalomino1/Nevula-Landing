@@ -1,0 +1,423 @@
+/* =========================================================
+   AJUSTES RESPONSIVE PARA NEVULA
+   Cargar DESPUÉS de landing.css
+   ========================================================= */
+
+/* Botones principales del inicio */
+.nav-login,
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 999px;
+    transition: background .25s ease, color .25s ease,
+                transform .25s ease, box-shadow .25s ease;
+}
+
+.nav-login {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: .88rem;
+    white-space: nowrap;
+    box-shadow: 0 5px 16px rgba(108, 92, 231, .22);
+}
+
+.nav-login:hover,
+.btn-primary:hover {
+    background: var(--primary-hover);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.btn-primary {
+    padding: 13px 22px;
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 8px 22px rgba(108, 92, 231, .2);
+}
+
+.btn-secondary {
+    padding: 12px 21px;
+    color: var(--primary);
+    background: #fff;
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+/* Evita que las secciones queden tapadas por el header fijo */
+section[id] {
+    scroll-margin-top: 110px;
+}
+
+/* El contenido no debe desbordarse en pantallas angostas */
+body,
+main,
+section,
+header,
+footer {
+    min-width: 0;
+}
+
+h1, h2, h3, h4, p, li, a, span {
+    overflow-wrap: anywhere;
+}
+
+img {
+    height: auto;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+    header {
+        padding: 12px 18px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .nav-login {
+        padding: 9px 15px;
+    }
+
+    .roles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nevi-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .nevi-image {
+        min-width: 0;
+        min-height: 360px;
+    }
+
+    .nevi-content {
+        max-width: 100%;
+    }
+
+    .ai-grid,
+    .system-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    header {
+        top: 10px;
+        width: calc(100% - 20px);
+        padding: 9px 12px;
+        border-radius: 18px;
+    }
+
+    .nav-container {
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-login {
+        padding: 9px 12px;
+        font-size: .76rem;
+    }
+
+    .mobile-menu-btn {
+        width: 42px;
+        height: 42px;
+    }
+
+    .mobile-menu {
+        top: 72px;
+        left: 10px;
+        right: 10px;
+        max-height: calc(100dvh - 90px);
+        overflow-y: auto;
+    }
+
+    .hero {
+        padding: 145px 17px 75px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 9vw, 2.7rem);
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: .93rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 24px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: .88rem;
+    }
+
+    .stats-bar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin: -15px auto 45px;
+        padding: 0 14px;
+    }
+
+    .stat-card {
+        min-width: 0;
+        padding: 17px 10px;
+    }
+
+    .stat-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .stat-card p {
+        font-size: .72rem;
+        line-height: 1.45;
+    }
+
+    .section,
+    .ai-section,
+    .system-section,
+    .nevi-section {
+        padding: 65px 15px;
+    }
+
+    .center-title {
+        margin-bottom: 35px;
+    }
+
+    .center-title h2,
+    .ai-header h2,
+    .system-content h2,
+    .nevi-content h2 {
+        font-size: clamp(1.65rem, 7vw, 2rem);
+        line-height: 1.2;
+    }
+
+    .center-title p {
+        font-size: .9rem;
+    }
+
+    .roles-grid,
+    .modules-grid,
+    .ai-grid,
+    .ai-role-grid,
+    .system-items,
+    .team-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .role-card,
+    .ai-card {
+        padding: 23px 20px;
+    }
+
+    .modules-grid {
+        max-width: 390px;
+    }
+
+    .module {
+        padding: 20px 16px;
+    }
+
+    .module p {
+        font-size: .78rem;
+    }
+
+    .nevi-container {
+        gap: 25px;
+    }
+
+    .nevi-image {
+        min-height: 270px;
+        overflow: hidden;
+    }
+
+    .nevi-character {
+        width: min(230px, 70vw);
+        max-height: 290px;
+    }
+
+    .orbit-1 {
+        width: 260px;
+        height: 260px;
+    }
+
+    .orbit-2 {
+        width: 310px;
+        height: 310px;
+    }
+
+    .nevi-feature {
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .nevi-feature span {
+        display: block;
+        line-height: 1.5;
+    }
+
+    .ai-role-panel {
+        padding: 18px;
+    }
+
+    .ai-role-panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .ai-role {
+        padding: 16px;
+    }
+
+    .system-panel {
+        padding: 18px;
+    }
+
+    .system-item {
+        min-width: 0;
+    }
+
+    .timeline::before {
+        left: 19px;
+    }
+
+    .timeline-item {
+        padding-left: 55px;
+    }
+
+    .timeline-icon {
+        left: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .timeline-content {
+        padding: 18px;
+    }
+
+    .team-grid {
+        max-width: 300px;
+        gap: 16px;
+    }
+
+    .team-card {
+        padding: 22px 16px;
+    }
+
+    .team-photo {
+        max-width: 170px;
+    }
+
+    footer {
+        padding: 48px 17px 20px;
+    }
+
+    .footer-main {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+/* Celulares muy angostos */
+@media (max-width: 380px) {
+    .nav-login {
+        padding: 8px 10px;
+        font-size: .7rem;
+    }
+
+    .logo {
+        font-size: 1.05rem;
+    }
+
+    .mobile-menu-btn {
+        width: 39px;
+        height: 39px;
+    }
+
+    .stats-bar {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 260px;
+    }
+
+    .modules-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .nevi-image {
+        min-height: 240px;
+    }
+
+    .orbit-1 {
+        width: 225px;
+        height: 225px;
+    }
+
+    .orbit-2 {
+        width: 265px;
+        height: 265px;
+    }
+}
+
+/* Accesibilidad: reducir movimiento si se solicita en el dispositivo */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
