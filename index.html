@@ -1,0 +1,2178 @@
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NEVULA — Sistema Inteligente de Gestión</title>
+
+    <meta name="theme-color" content="#6058cf">
+    <!-- FUENTES -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="<?= BASE_URL ?>/resources/css/landing.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         FONDO
+         ========================================= -->
+
+    <div class="ambient-bg">
+
+        <div class="blob blob-1"></div>
+
+        <div class="blob blob-2"></div>
+
+        <div class="blob blob-3"></div>
+
+    </div>
+
+
+    <!-- =========================================
+         HEADER
+         ========================================= -->
+
+    <header>
+
+        <div class="nav-container">
+
+
+            <a
+                href="#"
+                class="logo"
+            >
+
+                Nevula
+
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#roles">
+                        Roles
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#modulos">
+                        Funciones
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#nevi">
+                        Nevi
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#ia">
+                        NEVULA IA
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#flujo">
+                        Proceso
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#quienes-somos">
+                        Quiénes somos
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div
+                style="
+                    display:flex;
+                    align-items:center;
+                    gap:8px;
+                "
+            >
+
+                <a
+                    class="btn-login"
+                    href="?slug=AuthController"
+                >
+
+                    <i class="fas fa-right-to-bracket"></i>
+
+                    Iniciar sesión
+
+                </a>
+
+
+                <button
+                    class="mobile-menu-btn"
+                    id="mobileMenuBtn"
+                    type="button"
+                    aria-label="Abrir menú"
+                >
+
+                    <i class="fas fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MENÚ MÓVIL
+         ========================================= -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <a href="#roles">
+
+            <i class="fas fa-users"></i>
+
+            Roles
+
+        </a>
+
+
+        <a href="#modulos">
+
+            <i class="fas fa-table-cells"></i>
+
+            Funciones
+
+        </a>
+
+
+        <a href="#nevi">
+
+            <i class="fas fa-robot"></i>
+
+            Nevi
+
+        </a>
+
+
+        <a href="#ia">
+
+            <i class="fas fa-microchip"></i>
+
+            NEVULA IA
+
+        </a>
+
+
+        <a href="#flujo">
+
+            <i class="fas fa-route"></i>
+
+            Proceso
+
+        </a>
+
+
+        <a href="#quienes-somos">
+
+            <i class="fas fa-people-group"></i>
+
+            Quiénes somos
+
+        </a>
+
+
+    </div>
+
+
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
+    <section class="hero">
+
+        <div class="container reveal">
+
+            <span class="tag">
+
+                <i class="fas fa-layer-group"></i>
+
+                Plataforma de gestión para equipos de trabajo
+
+            </span>
+
+
+            <h1>
+
+                Gestión organizada para
+
+                <br>
+
+                <span>
+                    equipos de trabajo
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                NEVULA centraliza jornadas, solicitudes,
+                comunicaciones, personal y supervisión
+                en un mismo lugar.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         ESTADÍSTICAS
+         ========================================= -->
+
+    <div class="stats-bar reveal">
+
+        <div class="stat-card">
+
+            <h3>4</h3>
+
+            <p>
+                Perfiles del sistema
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h3>16+</h3>
+
+            <p>
+                Funciones y módulos
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h3>24/7</h3>
+
+            <p>
+                Información disponible
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h3>IA</h3>
+
+            <p>
+                Automatización y asistencia
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         ROLES
+         ========================================= -->
+
+    <section
+        class="section"
+        id="roles"
+    >
+
+        <div class="center-title reveal">
+
+            <h2>
+                Perfiles del sistema
+            </h2>
+
+            <p>
+                Funciones principales según cada rol.
+            </p>
+
+        </div>
+
+
+        <div class="roles-grid">
+
+
+            <div class="role-card empleado reveal">
+
+                <div class="icon-circle">
+
+                    <i class="fas fa-user"></i>
+
+                </div>
+
+
+                <h3>
+                    Empleado
+                </h3>
+
+
+                <p class="subtitle">
+                    Gestiona su jornada y comunica novedades.
+                </p>
+
+
+                <ul class="feature-list">
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>1. Asistencia y jornada.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>2. Informar faltas.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>3. Reportar incidencias.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>4. Solicitar cambios de turno.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>5. Solicitar horas extras.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>6. Licencias, recibos y comunicaciones.</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="role-card colider reveal">
+
+                <div class="icon-circle">
+
+                    <i class="fas fa-user-shield"></i>
+
+                </div>
+
+
+                <h3>
+                    Colíder
+                </h3>
+
+
+                <p class="subtitle">
+                    Coordina y supervisa la operación diaria.
+                </p>
+
+
+                <ul class="feature-list">
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>1. Gestión de turnos.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>2. Cambios de turno.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>3. Revisar licencias.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>4. Incidencias y solicitudes.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>5. Seguimiento y estadísticas.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>6. Comunicación con el líder.</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="role-card lider reveal">
+
+                <div class="icon-circle">
+
+                    <i class="fas fa-chess-queen"></i>
+
+                </div>
+
+
+                <h3>
+                    Líder
+                </h3>
+
+
+                <p class="subtitle">
+                    Supervisa la operación y administra el personal.
+                </p>
+
+
+                <ul class="feature-list">
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>1. Estadísticas generales.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>2. Banco de Horas.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>3. Alta, baja y modificación de personal.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>4. Supervisar asistencias y licencias.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>5. Supervisar incidencias.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>6. Mapa y configuración de alertas.</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="role-card admin reveal">
+
+                <div class="icon-circle">
+
+                    <i class="fas fa-user-cog"></i>
+
+                </div>
+
+
+                <h3>
+                    Administrador
+                </h3>
+
+
+                <p class="subtitle">
+                    Administra los aspectos técnicos del sistema.
+                </p>
+
+
+                <ul class="feature-list">
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>1. Gestión de usuarios.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>2. Roles y permisos.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>3. Control de accesos.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>4. Registro y auditoría.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>5. Estado del sistema.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <span>6. Mantenimiento y configuración.</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         MÓDULOS
+         ========================================= -->
+
+    <section
+        class="section modules-section"
+        id="modulos"
+    >
+
+        <div class="center-title reveal">
+
+            <h2>
+                Funciones de NEVULA
+            </h2>
+
+            <p>
+                Principales herramientas de la plataforma.
+            </p>
+
+        </div>
+
+
+        <div class="modules-grid">
+
+            <div class="module reveal">
+                <i class="fas fa-fingerprint"></i>
+                <h4>Asistencia</h4>
+                <p>Registro de jornadas.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-calendar-days"></i>
+                <h4>Cambios de turno</h4>
+                <p>Gestión de modificaciones.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-file-medical"></i>
+                <h4>Licencias</h4>
+                <p>Solicitud y gestión.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-triangle-exclamation"></i>
+                <h4>Incidencias</h4>
+                <p>Reporte y seguimiento.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-clock"></i>
+                <h4>Horas extras</h4>
+                <p>Solicitud de horas.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-hourglass-half"></i>
+                <h4>Banco de Horas</h4>
+                <p>Control de horas.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-user-xmark"></i>
+                <h4>Faltas</h4>
+                <p>Seguimiento de ausencias.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-comments"></i>
+                <h4>Comunicaciones</h4>
+                <p>Mensajes y avisos.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-receipt"></i>
+                <h4>Recibos de sueldo</h4>
+                <p>Información salarial.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-map-location-dot"></i>
+                <h4>Métricas y alertas</h4>
+                <p>Estados operativos.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-bell"></i>
+                <h4>Notificaciones</h4>
+                <p>Alertas y novedades.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-users-gear"></i>
+                <h4>Personal</h4>
+                <p>Gestión del personal.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-user-lock"></i>
+                <h4>Usuarios y permisos</h4>
+                <p>Control de accesos.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-chart-line"></i>
+                <h4>Estadísticas</h4>
+                <p>Indicadores.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-list-check"></i>
+                <h4>Registro de actividad</h4>
+                <p>Historial de operaciones.</p>
+            </div>
+
+            <div class="module reveal">
+                <i class="fas fa-server"></i>
+                <h4>Estado del sistema</h4>
+                <p>Supervisión técnica.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PRESENTACIÓN DE NEVI
+         ========================================= -->
+
+    <section
+        class="nevi-section"
+        id="nevi"
+    >
+
+        <div class="nevi-container">
+
+
+            <div class="nevi-image reveal">
+
+                <div class="nevi-glow"></div>
+
+                <div class="nevi-orbit orbit-1"></div>
+
+                <div class="nevi-orbit orbit-2"></div>
+
+                <div class="nevi-dot nevi-dot-1"></div>
+
+                <div class="nevi-dot nevi-dot-2"></div>
+
+
+                <img
+                    src="../resources/img/nevi.png"
+                    alt="Nevi, asistente inteligente de NEVULA"
+                    class="nevi-character"
+                >
+
+            </div>
+
+
+            <div class="nevi-content reveal">
+
+                <span class="nevi-label">
+
+                    <i class="fas fa-wand-magic-sparkles"></i>
+
+                    CONOCÉ A NEVI
+
+                </span>
+
+
+                <h2>
+
+                    Tu asistente dentro de
+
+                    <span>
+                        NEVULA.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Nevi es el asistente inteligente de
+                    NEVULA. Interpreta pedidos, consulta
+                    información y permite realizar acciones
+                    según el rol y los permisos de cada usuario.
+
+                </p>
+
+
+                <div class="nevi-features">
+
+
+                    <div class="nevi-feature">
+
+                        <div class="nevi-feature-icon">
+
+                            <i class="fas fa-comments"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Entiende pedidos
+                            </strong>
+
+                            <span>
+                                Interpreta lenguaje natural.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="nevi-feature">
+
+                        <div class="nevi-feature-icon">
+
+                            <i class="fas fa-bolt"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Actúa por vos
+                            </strong>
+
+                            <span>
+                                Ejecuta acciones según tus permisos.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="nevi-feature">
+
+                        <div class="nevi-feature-icon">
+
+                            <i class="fas fa-user-shield"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Respeta tu rol
+                            </strong>
+
+                            <span>
+                                Solo permite acciones autorizadas.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="nevi-feature">
+
+                        <div class="nevi-feature-icon">
+
+                            <i class="fas fa-database"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Trabaja con la información de NEVULA
+                            </strong>
+
+                            <span>
+                                Consulta datos del sistema de forma controlada.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="nevi-status">
+
+                    <span class="nevi-status-dot"></span>
+
+                    Nevi integrado en NEVULA IA
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         NEVULA IA
+         ========================================= -->
+
+    <section
+        class="ai-section"
+        id="ia"
+    >
+
+        <div class="ai-container">
+
+
+            <div class="ai-header reveal">
+
+                <span class="ai-label">
+
+                    <i class="fas fa-microchip"></i>
+
+                    INTELIGENCIA ARTIFICIAL
+
+                </span>
+
+
+                <h2>
+                    NEVULA IA
+                </h2>
+
+
+                <p>
+
+                    Automatización de planillas y
+                    asistencia mediante Nevi.
+
+                </p>
+
+            </div>
+
+
+            <div class="ai-grid">
+
+
+                <!-- OCR -->
+
+                <div class="ai-card reveal">
+
+                    <div class="ai-card-icon">
+
+                        <i class="fas fa-file-image"></i>
+
+                    </div>
+
+
+                    <h3>
+                        Lectura de planillas
+                    </h3>
+
+
+                    <p class="ai-card-description">
+
+                        Convierte planillas en información
+                        estructurada para NEVULA.
+
+                    </p>
+
+
+                    <ul class="ai-list">
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>1. Recibe JPG, PNG, WEBP, HEIC, PDF o Excel.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>2. OpenCV corrige imágenes y EasyOCR reconoce texto.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>3. Reconstruye filas y columnas.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>4. Valida empleados y turnos.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>5. Marca datos dudosos para revisión.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>6. Devuelve la información en JSON.</span>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="ai-tech">
+
+                        <span>FastAPI</span>
+                        <span>OpenCV</span>
+                        <span>EasyOCR</span>
+                        <span>JSON</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NEVI -->
+
+                <div class="ai-card reveal">
+
+                    <div class="ai-card-icon">
+
+                        <i class="fas fa-comments"></i>
+
+                    </div>
+
+
+                    <h3>
+                        Nevi — Chatbot
+                    </h3>
+
+
+                    <p class="ai-card-description">
+
+                        Asistente conversacional que
+                        responde y ejecuta acciones
+                        según los permisos.
+
+                    </p>
+
+
+                    <ul class="ai-list">
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>1. Entiende lenguaje natural con Rasa.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>2. Identifica días, fechas y turnos.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>3. Ejecuta acciones mediante Python.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>4. Consulta y modifica datos en MySQL.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>5. FastAPI conecta el bot con NEVULA.</span>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>6. Responde según el rol del usuario.</span>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="ai-tech">
+
+                        <span>FastAPI</span>
+                        <span>Rasa</span>
+                        <span>Python</span>
+                        <span>MySQL</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CAPACIDADES -->
+
+            <div class="ai-role-panel reveal">
+
+                <div class="ai-role-panel-header">
+
+                    <h3>
+                        ¿Qué puede hacer Nevi?
+                    </h3>
+
+                    <p>
+                        Funciones principales por rol.
+                    </p>
+
+                </div>
+
+
+                <div class="ai-role-grid">
+
+
+                    <!-- EMPLEADO -->
+
+                    <div class="ai-role">
+
+                        <div class="ai-role-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+
+                        <h4>
+                            Empleado
+                        </h4>
+
+                        <ul>
+
+                            <li>
+                                Consultar turno
+                            </li>
+
+                            <li>
+                                Ver calendario
+                            </li>
+
+                            <li>
+                                Consultar horas
+                            </li>
+
+                            <li>
+                                Informar faltas
+                            </li>
+
+                            <li>
+                                Pedir cambios de turno
+                            </li>
+
+                            <li>
+                                Reportar incidencias
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- COLÍDER -->
+
+                    <div class="ai-role">
+
+                        <div class="ai-role-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+
+                        <h4>
+                            Colíder
+                        </h4>
+
+                        <ul>
+
+                            <li>
+                                Ver faltas y llegadas
+                            </li>
+
+                            <li>
+                                Revisar cobertura
+                            </li>
+
+                            <li>
+                                Ver incidencias
+                            </li>
+
+                            <li>
+                                Revisar solicitudes
+                            </li>
+
+                            <li>
+                                Aprobar o rechazar
+                            </li>
+
+                            <li>
+                                Buscar reemplazos
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- LÍDER -->
+
+                    <div class="ai-role">
+
+                        <div class="ai-role-icon">
+                            <i class="fas fa-chess-queen"></i>
+                        </div>
+
+                        <h4>
+                            Líder
+                        </h4>
+
+                        <ul>
+
+                            <li>
+                                Mapas de cobertura
+                            </li>
+
+                            <li>
+                                Indicadores clave
+                            </li>
+
+                            <li>
+                                Organigrama
+                            </li>
+
+                            <li>
+                                Panel de RRHH
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- ADMINISTRADOR -->
+
+                    <div class="ai-role">
+
+                        <div class="ai-role-icon">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+
+                        <h4>
+                            Administrador
+                        </h4>
+
+                        <ul>
+
+                            <li>
+                                Usuarios y permisos
+                            </li>
+
+                            <li>
+                                Control de accesos
+                            </li>
+
+                            <li>
+                                Registro de actividad
+                            </li>
+
+                            <li>
+                                Estado del sistema
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- SEGURIDAD -->
+
+                <div class="ai-security">
+
+                    <i class="fas fa-shield-halved"></i>
+
+                    <div>
+
+                        <strong>
+                            Seguridad y trazabilidad
+                        </strong>
+
+                        <span>
+                            Nevi verifica permisos antes de cada acción
+                            y registra las operaciones para su seguimiento
+                            y auditoría.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         INFORMACIÓN DEL SISTEMA
+         ========================================= -->
+
+    <section class="system-section">
+
+        <div class="system-container">
+
+
+            <div class="system-content reveal">
+
+                <span class="small-label">
+
+                    <i class="fas fa-sliders"></i>
+
+                    ORGANIZACIÓN DEL SISTEMA
+
+                </span>
+
+
+                <h2>
+                    Toda la información
+                    en un mismo lugar.
+                </h2>
+
+
+                <p>
+
+                    NEVULA centraliza jornadas,
+                    solicitudes, comunicaciones,
+                    personal y supervisión.
+
+                </p>
+
+
+                <ul class="system-list">
+
+                    <li>
+                        <i class="fas fa-circle-check"></i>
+                        <span>Acceso según rol y permisos.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-circle-check"></i>
+                        <span>Módulos centralizados.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-circle-check"></i>
+                        <span>Seguimiento de solicitudes.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-circle-check"></i>
+                        <span>Historial y auditoría.</span>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-circle-check"></i>
+                        <span>Asistencia mediante NEVULA IA.</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="system-panel reveal">
+
+                <div class="system-panel-header">
+
+                    <div class="system-panel-title">
+
+                        <i class="fas fa-layer-group"></i>
+
+                        Organización NEVULA
+
+                    </div>
+
+
+                    <span class="system-state">
+
+                        <span></span>
+
+                        ACTIVO
+
+                    </span>
+
+                </div>
+
+
+                <div class="system-items">
+
+
+                    <div class="system-item">
+
+                        <i class="fas fa-users"></i>
+
+                        <strong>
+                            Personal
+                        </strong>
+
+                        <span>
+                            Información de empleados
+                        </span>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <i class="fas fa-calendar-check"></i>
+
+                        <strong>
+                            Jornadas
+                        </strong>
+
+                        <span>
+                            Asistencia y turnos
+                        </span>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <i class="fas fa-file-lines"></i>
+
+                        <strong>
+                            Solicitudes
+                        </strong>
+
+                        <span>
+                            Licencias y novedades
+                        </span>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <i class="fas fa-chart-pie"></i>
+
+                        <strong>
+                            Supervisión
+                        </strong>
+
+                        <span>
+                            Indicadores y alertas
+                        </span>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <i class="fas fa-comments"></i>
+
+                        <strong>
+                            Comunicaciones
+                        </strong>
+
+                        <span>
+                            Mensajes y notificaciones
+                        </span>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <i class="fas fa-shield-halved"></i>
+
+                        <strong>
+                            Seguridad
+                        </strong>
+
+                        <span>
+                            Roles y permisos
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PROCESO
+         ========================================= -->
+
+    <section
+        class="section workflow-section"
+        id="flujo"
+    >
+
+        <div class="center-title reveal">
+
+            <h2>
+                Cómo funciona NEVULA
+            </h2>
+
+            <p>
+                Flujo general de la plataforma.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-right-to-bracket"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        1. Acceso al sistema
+                    </h4>
+
+                    <p>
+                        NEVULA identifica el rol y los permisos del usuario.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-fingerprint"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        2. Registro de jornada
+                    </h4>
+
+                    <p>
+                        Se registra la asistencia y la jornada laboral.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-list-check"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        3. Gestión de novedades
+                    </h4>
+
+                    <p>
+                        Se gestionan faltas, incidencias, cambios,
+                        horas extras y licencias.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        4. Supervisión
+                    </h4>
+
+                    <p>
+                        Los responsables revisan y gestionan
+                        las novedades.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        5. NEVULA IA
+                    </h4>
+
+                    <p>
+                        Se procesan planillas y se realizan
+                        acciones mediante Nevi.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        6. Gestión general
+                    </h4>
+
+                    <p>
+                        El líder consulta estadísticas,
+                        horas y alertas.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        7. Administración técnica
+                    </h4>
+
+                    <p>
+                        El administrador gestiona usuarios,
+                        permisos y configuración.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-icon">
+                    <i class="fas fa-clock-rotate-left"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+                        8. Seguimiento y trazabilidad
+                    </h4>
+
+                    <p>
+                        Las operaciones quedan registradas
+                        para su seguimiento.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         QUIÉNES SOMOS
+         ========================================= -->
+
+    <section
+        class="section about-section"
+        id="quienes-somos"
+    >
+
+        <div class="center-title reveal">
+
+            <h2>
+                ¿Quiénes somos?
+            </h2>
+
+            <p>
+                Somos estudiantes de 7° 1° de la Escuela Secundaria
+                Técnica N°3 de Tortuguitas, cursando la modalidad
+                de Informática Profesional y Personal.
+            </p>
+
+        </div>
+
+
+        <div class="team-grid">
+
+            <div class="team-card reveal">
+
+                <div class="team-photo">
+
+                    <i class="fas fa-user"></i>
+
+                    <img
+                        src="<?= BASE_URL ?>/resources/img/juani.png."
+                        alt="Juana Palomino"
+                        loading="lazy"
+                        onerror="this.remove()"
+                    >
+
+                </div>
+
+                <h3>
+                    Juana Palomino
+                </h3>
+
+            </div>
+
+
+            <div class="team-card reveal">
+
+                <div class="team-photo">
+
+                    <i class="fas fa-user"></i>
+
+                    <img
+                        src="<?= BASE_URL ?>/resources/img/malu.png"
+                        alt="Malen Luna"
+                        loading="lazy"
+                        onerror="this.remove()"
+                    >
+
+                </div>
+
+                <h3>
+                    Malen Luna
+                </h3>
+
+            </div>
+
+
+            <div class="team-card reveal">
+
+                <div class="team-photo">
+
+                    <i class="fas fa-user"></i>
+
+                    <img
+                        src="<?= BASE_URL ?>/resources/img/mar.png"
+                        alt="Mariel Szewaga"
+                        loading="lazy"
+                        onerror="this.remove()"
+                    >
+
+                </div>
+
+                <h3>
+                    Mariel Szewaga
+                </h3>
+
+            </div>
+
+
+            <div class="team-card reveal">
+
+                <div class="team-photo">
+
+                    <i class="fas fa-user"></i>
+
+                    <img
+                        src="<?= BASE_URL ?>/resources/img/yapu.png"
+                        alt="Agustín Yapura"
+                        loading="lazy"
+                        onerror="this.remove()"
+                    >
+
+                </div>
+
+                <h3>
+                    Agustín Yapura
+                </h3>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <div class="footer-main">
+
+
+                <div class="footer-brand reveal">
+
+                    <a
+                        href="#"
+                        class="footer-logo"
+                    >
+
+                        <img
+                            src="../resources/img/nevula-logo.png"
+                            alt="Logo de Nevula"
+                        >
+
+                        Nevula
+
+                    </a>
+
+
+                    <p class="footer-description">
+
+                        Plataforma de gestión que centraliza
+                        información, herramientas y supervisión
+                        según el rol de cada usuario.
+
+                    </p>
+
+
+                    <span class="footer-tag">
+
+                        <i class="fas fa-microchip"></i>
+
+                        Gestión + Inteligencia Artificial
+
+                    </span>
+
+                </div>
+
+
+                <div class="footer-column reveal">
+
+                    <h4>
+                        Navegación
+                    </h4>
+
+
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#roles">
+                                Roles
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#modulos">
+                                Funciones
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#nevi">
+                                Nevi
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#ia">
+                                NEVULA IA
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#flujo">
+                                Proceso
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#quienes-somos">
+                                Quiénes somos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="?slug=AuthController">
+                                Iniciar sesión
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column reveal">
+
+                    <h4>
+                        NEVULA
+                    </h4>
+
+
+                    <div class="footer-info">
+
+
+                        <div class="footer-info-item">
+
+                            <i class="fas fa-users"></i>
+
+                            <span>
+                                Gestión por roles
+                            </span>
+
+                        </div>
+
+
+                        <div class="footer-info-item">
+
+                            <i class="fas fa-calendar-check"></i>
+
+                            <span>
+                                Jornadas y solicitudes
+                            </span>
+
+                        </div>
+
+
+                        <div class="footer-info-item">
+
+                            <i class="fas fa-chart-line"></i>
+
+                            <span>
+                                Supervisión operativa
+                            </span>
+
+                        </div>
+
+
+                        <div class="footer-info-item">
+
+                            <i class="fas fa-robot"></i>
+
+                            <span>
+                                Nevi — asistente inteligente
+                            </span>
+
+                        </div>
+
+
+                        <div class="footer-info-item">
+
+                            <i class="fas fa-microchip"></i>
+
+                            <span>
+                                NEVULA IA
+                            </span>
+
+                        </div>
+
+
+                        <div class="footer-info-item">
+
+                            <i class="fas fa-shield-halved"></i>
+
+                            <span>
+                                Control de accesos
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 <strong>Nevula</strong>.
+                    Todos los derechos reservados.
+                    Implementación actual:
+                    Cooperativa de Tortuguitas.
+
+                </p>
+
+
+                <div class="footer-status">
+
+                    <span class="footer-status-dot"></span>
+
+                    Sistema operativo
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+         ========================================= -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+
+                /* =====================================
+                   ANIMACIONES AL HACER SCROLL
+                   ===================================== */
+
+                const reveals =
+                    document.querySelectorAll(".reveal");
+
+
+                function revealOnScroll() {
+
+                    const windowHeight =
+                        window.innerHeight;
+
+
+                    for (
+                        let i = 0;
+                        i < reveals.length;
+                        i++
+                    ) {
+
+                        const elementTop =
+                            reveals[i]
+                                .getBoundingClientRect()
+                                .top;
+
+
+                        if (
+                            elementTop <
+                            windowHeight - 100
+                        ) {
+
+                            reveals[i]
+                                .classList
+                                .add("active");
+
+                        }
+
+                    }
+
+                }
+
+
+                window.addEventListener(
+                    "scroll",
+                    revealOnScroll,
+                    {
+                        passive: true
+                    }
+                );
+
+
+                revealOnScroll();
+
+
+                /* =====================================
+                   MENÚ MÓVIL
+                   ===================================== */
+
+                const menuButton =
+                    document.getElementById(
+                        "mobileMenuBtn"
+                    );
+
+
+                const mobileMenu =
+                    document.getElementById(
+                        "mobileMenu"
+                    );
+
+
+                if (
+                    menuButton &&
+                    mobileMenu
+                ) {
+
+
+                    menuButton.addEventListener(
+                        "click",
+                        function () {
+
+                            mobileMenu.classList.toggle(
+                                "active"
+                            );
+
+
+                            const icon =
+                                menuButton.querySelector(
+                                    "i"
+                                );
+
+
+                            if (
+                                mobileMenu.classList.contains(
+                                    "active"
+                                )
+                            ) {
+
+                                icon.className =
+                                    "fas fa-xmark";
+
+                            } else {
+
+                                icon.className =
+                                    "fas fa-bars";
+
+                            }
+
+                        }
+                    );
+
+
+                    const mobileLinks =
+                        mobileMenu.querySelectorAll(
+                            "a"
+                        );
+
+
+                    mobileLinks.forEach(
+                        function (link) {
+
+                            link.addEventListener(
+                                "click",
+                                function () {
+
+                                    mobileMenu.classList.remove(
+                                        "active"
+                                    );
+
+
+                                    const icon =
+                                        menuButton.querySelector(
+                                            "i"
+                                        );
+
+
+                                    icon.className =
+                                        "fas fa-bars";
+
+                                }
+                            );
+
+                        }
+                    );
+
+                }
+
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
